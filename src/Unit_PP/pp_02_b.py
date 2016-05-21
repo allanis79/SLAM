@@ -171,9 +171,12 @@ def astar_statespace(start_pose, goal_pose, obstacles):
         #   and if so, skip the rest of the loop. (This is the point where
         #   we prevent exponential growth.)
 
-        for i in generated_states.keys():
-            if i == dis_index:
-                continue
+        #for i in generated_states.keys():
+            #if i == dis_index:
+                #continue
+
+        if generated_states.has_key(dis_index):
+            continue
 
 
 
